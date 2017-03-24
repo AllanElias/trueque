@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="eng">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<head>
+	<title>Add</title>
+</head>
+<body>
+
+<div class="container-flow">
+	<div class="nav row">
+		<div class="nav--logo col-xs-4 col-md-4 col-xl-4">
+			<a href="home.html"><img src="img/main-logo.svg" alt="logotipo trueque"></a>
+
+		</div>
+		<div class="nav--search col-xs-4 col-md-4 col-xl-4">
+			<input type="text" class="form-control" id="search-input" placeholder="Buscar..." autocomplete="off">
+		</div>
+		<div class="nav--icons col-xs-4 col-md-4 col-xl-4">
+			<a href="add-image.html"><img src="img/add.svg" alt="add-product"></a>
+			<a href="home.html"><img src="img/home.svg" alt="home"></a>
+			<a href="profile.html"><img src="img/user.svg" alt="user"></a>
+		</div>	
+	</div>
+</div>
+
+<div class="container">
+	<div class="main row">
+		 <div class="col-xs-12 col-sm-6 col-md-4">
+			    <div class="form-group">
+			        <label>Subir producto</label>
+			        <div class="input-group">
+			            <span class="input-group-btn">
+			                <span class="btn btn-default btn-file">
+			                     <img src="img/add.svg"><input type="file" id="imgInp">
+			                </span>
+			            </span>
+			            <input type="text" class="form-control" readonly>
+			        </div>
+			        <img id='img-upload'/>
+			        <label>Producto</label>
+			    <input type="text" class="form-control" id="name" placeholder="Producto">
+			  </div>
+			  <div class="form-group">
+			    <label >Breve descripción</label>
+			    <textarea class="form-control" rows="3" placeholder="Breve descripción"></textarea>
+			  </div>
+		  		<button type="submit" class="btn btn-default">Añadir producto </button>
+		</div>
+	</div>
+</div>
+
+<script src="js/jquery-3.2.0.slim.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
